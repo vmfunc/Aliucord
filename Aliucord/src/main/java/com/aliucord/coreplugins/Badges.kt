@@ -113,7 +113,7 @@ internal class Badges : Plugin(Manifest("Badges")) {
         val list = ArrayList<Badge>(1)
         badges.roles?.forEach { when(it) {
             "dev" -> list.add(Badge(R.e.ic_staff_badge_blurple_24dp, null, "Aliucord Developer", false, null))
-            "donor" -> list.add(Badge(0, null, "Aliucord Donor", false, "https://cdn.discordapp.com/emojis/859801776232202280.webp"))
+            "donor" -> list.add(Badge(0, null, "Aliucord Donor test", false, "https://cdn.discordapp.com/emojis/859801776232202280.webp"))
             "contributor" -> list.add(Badge(0, null, "Aliucord Contributor", false, "https://cdn.discordapp.com/emojis/886587553187246120.webp"))
         } }
         if (badges.custom?.isNotEmpty() == true) list.addAll(badges.custom.map { it.toDiscordBadge() })
