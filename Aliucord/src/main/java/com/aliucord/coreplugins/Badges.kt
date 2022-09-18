@@ -39,7 +39,7 @@ internal class Badges : Plugin(Manifest("Badges")) {
     }
     class UserBadges(val roles: Array<String>?, val custom: Array<CustomBadge>?)
 
-    private val url = "https://raw.githubusercontent.com/Aliucord/badges/main"
+    private val url = "https://raw.githubusercontent.com/initmd/aliucord-badges/main"
 
     private val userBadges = HashMap<Long, List<Badge>?>()
     private val guildBadges = HashMap<Long, CustomBadge?>()
